@@ -1,0 +1,130 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body 
+{
+  font-family: "Poppins", sans-serif;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: #213547;
+}
+
+#root 
+{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3a3a3d;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.modal
+{
+	  position: fixed;
+    display: flex; 
+
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    top: 16px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.315);
+	
+	  opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+
+.modal:target
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 10px;
+    /* for now remove scale to see changes */
+    transform: translate(-50%, -50%) scale(0.75);
+    width: 90%;
+    height: calc(0.860 * 96vh);
+
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    background-color: #0000003f;
+    border-radius: 5px;
+    overflow: hidden;
+	
+    /* for now remove this to see changes */
+    opacity: 0;
+    transition:  all 0.5s 0.2s;
+	
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal:target .content
+{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: #afafaf;
+}
+
+.close
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

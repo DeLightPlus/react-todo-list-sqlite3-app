@@ -1,0 +1,270 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.todo
+{
+    width: 100%;
+    height: 100%;
+}
+
+.Header-container
+{
+    width: 80vw;
+}
+
+.container
+{
+    padding: 10px;
+    background-color: blanchedalmond;
+    height: 90%;
+    width: 100;
+}
+
+.container h2
+{
+    color: chocolate;
+}
+
+
+.todo-list-container
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 94%;
+
+}
+
+.todo-list-container .header
+{    
+    width: 60%;    
+}
+
+
+
+.header .input-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-container input
+{
+    padding: 10px;
+    width: 98%;
+    background-color: burlywood;
+    color: black;
+    font-size: 15px;
+    
+    border: none;
+    border-right: 1px solid antiquewhite;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    outline: none;
+}
+
+.input-container #header-select
+{
+    display: flex;
+    flex-direction: column;
+    color: chocolate;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: burlywood;
+    width: 100px;
+}
+
+#header-select select
+{
+    background-color: antiquewhite;
+    border: none;
+    color: chocolate;
+    text-align: center;
+    
+    border-bottom: 5px solid;
+    border-color:bisque;
+}
+
+#header-select .High
+{
+    border-color:rgb(255, 0, 0);
+    color: black;
+}
+
+#header-select .Medium
+{
+    border-color:rgb(255, 217, 0);
+    color: black;
+ 
+}
+
+#header-select .Low
+{
+    border-color:rgb(31, 187, 0);
+    color: black;
+}
+
+.input-container #AddButton
+{
+    width: 128px;
+    background-color: burlywood;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid antiquewhite;
+}
+
+#AddButton:hover
+{
+    background-color: coral;
+}
+
+.list-container
+{
+    width: 90%;
+}
+
+.list-container input.search 
+{
+    border: none;
+    width: 48%;
+    height: 32px;
+    padding: 10px;
+}
+
+.list-container ul
+{
+    padding: 2px;
+    margin-top: 10px;
+    width: 100%;
+    height: 84%;
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(0, 0, 0, 0.397));
+    border-radius: 5px;
+
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.list-container li
+{
+    background-color: rgb(77, 62, 45);
+    border-bottom: 1px solid black;
+    display: block;
+    border-radius: 5px;
+    margin: 4px;
+    
+}
+
+li #item, #item-editing
+{
+    display:flex ;
+    flex-direction:row;
+    text-align: center;
+    justify-content: space-between ;
+}
+
+li #item-text
+{
+    flex: 1 ;
+    flex-direction:row;
+    text-align: center;
+    justify-content: center;
+    align-content: center;   
+}
+
+#priority
+{
+    height: 50px;
+    width: 26px;
+    margin: 10px;    
+}
+
+.High#priority 
+{
+    background-color: red;
+    color: black;    
+}
+
+.Medium#priority 
+{
+    background-color: rgb(255, 238, 0);
+    color: black;
+
+}
+
+.Low#priority 
+{
+    background-color: rgb(42, 211, 0);
+    color: black;
+}
+
+
+
+#item-editing input
+{
+    padding: 10px;
+    width: 60%;
+    height: 60px;
+}
+
+#item-editing .completed
+{   
+    display: flex;
+    flex-direction: column;
+
+    align-self: center;
+    justify-content: center;
+}
+
+#item-editing input#check
+{   
+    width: 32px;
+    height: 32px;
+    align-self: center;
+}
+
+#item-editing select
+{    
+    width: 86px;
+    height: 26px;
+    border-radius: 5px;
+    color: chocolate;
+}
+
+
+
+#item-editing #item-text
+{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.p-container button 
+{
+    margin: 5px;
+    padding: 0;
+    height: 25px; 
+    width: 64px;  
+
+    font-size: 11px;
+}
+
+#item-editing .p-container
+{
+    background-color: rgba(240, 248, 255, 0.336);
+    width: 100px;
+    display: flex; 
+    flex-direction:column; 
+    align-items:center;
+    justify-content: center;
+}
