@@ -69,3 +69,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Layout styles for desktop and larger screens */
+@media screen and (max-width: 600px) {
+  .todo-list-container .header 
+  {
+      width: 90%;
+      text-align: left;
+  }
+}
