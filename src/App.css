@@ -16,7 +16,11 @@ body
   min-width: 320px;
   min-height: 100vh;
 
-  background: #213547;
+  background: url("./assets/time-organization-concept-with-planner-close-up.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+
 }
 
 #root 

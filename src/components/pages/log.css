@@ -3,17 +3,17 @@
     padding: 25px 45px 10px 45px;
     width: 400px;
     height: 420px;
-    background: black;
-    color: aliceblue;
+    background: rgb(255, 255, 255);
+    color: rgb(37, 37, 37);
     border-radius: 15px;
-    box-shadow: 0px 0px 20px #646cff ;
+    box-shadow: 0px 0px 20px #fbc4fd ;
 }
 
 .form-container h2
 {
    font-size: 32px;
    text-align: center;
-   color: white;
+   color: rgb(26, 26, 26);
    text-shadow: 0px 4px 5px #646cff;
    text-decoration: overline;
 }
@@ -27,7 +27,7 @@
     align-items: center;
     width: 100%; 
     /*height: calc(148px);*/
-    background-color: rgba(243, 243, 243, 0.062);
+    background-color: rgba(0, 0, 0, 0.055);
     border-radius: 10px;
     margin-top: 16px;
 }
